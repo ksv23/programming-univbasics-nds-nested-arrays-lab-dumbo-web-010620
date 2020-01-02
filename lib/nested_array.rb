@@ -1,5 +1,5 @@
 # Examples inspired by U. S. National Organic Standards
-
+require 'pry'
 CONVENTIONAL_PRODUCE = [ "Grapefruit",  "Pineapple",  "Oranges",  "Watermelon",  "Eggplant"]
 ORGANIC_PRODUCE = [  "Strawberries",  "Potatoes",  "Grapes",  "Avocadoes",  "Asparagus"]
 
@@ -29,6 +29,9 @@ def matrix_lookup(matrix, row, column)
   # Given any matrix (array of arrays), a row index and a column index,
   # Return the matrix's content at that row and and column
   matrix[row][column]
+
+  binding.pry
+
 end
 
 def matrix_update(matrix, row, column, new_value)
